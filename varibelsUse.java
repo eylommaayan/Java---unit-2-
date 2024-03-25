@@ -1,4 +1,4 @@
-public class VarExample {
+public class varibelsUse {
     static final int MIN = 1; // defining the MIN constant with the value 1
 
     public static void main(String[] args) {
