@@ -4,37 +4,37 @@ public class SevenBoomGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input the initial number of participants
+        // הזן את המספר הראשוני של המשתתפים
         System.out.println("Enter the initial number of participants:");
         int initialParticipants = scanner.nextInt();
 
-        // Calculate the number of participants after the first round
+        // חישוב מספר המשתתפים לאחר הסבב הראשון
         int remainingAfterFirstRound = calculateAfterFirstRound(initialParticipants);
         System.out.println("Number of participants after the first round: " + remainingAfterFirstRound);
 
-        // Calculate the number of participants after the second round
+        // חישוב לאחר הסבב השני
         int remainingAfterSecondRound = calculateAfterSecondRound(remainingAfterFirstRound);
         System.out.println("Number of participants after the second round: " + remainingAfterSecondRound);
     }
 
-    // Function to calculate the number of participants after the first round
+    // פונקציה לחישוב מספר המשתתפים לאחר הסבב הראשון
     public static int calculateAfterFirstRound(int initialParticipants) {
-        // The participant to be eliminated (7th participant)
+        // המשתתף שיודח (משתתף שביעי)
         int participantToEliminate = 1;
-        // Calculate the remaining participants after the first round
+        // חישוב המשתתפים הנותרים לאחר הסיבוב הראשון
         int remainingParticipants = initialParticipants - participantToEliminate;
         return remainingParticipants;
     }
 
     /**
-     * Calculates the number of participants remaining after the second round.
+     * חישוב מספר המשתתפים שנותרו לאחר הסבב השני.
      * 
-     * @param remainingAfterFirstRound The number of participants remaining after the first round.
-     * @return The number of participants remaining after the second round.
+     * @param remainingAfterFirstRound מספר המשתתפים שנותרו לאחר הסבב הראשון.
+     * @return מספר המשתתפים שנותרו לאחר הסבב השני.
      */
     public static int calculateAfterSecondRound(int remainingAfterFirstRound) {
-        // Calculate the remaining participants after the second round
-        // The last participant remaining in the first round becomes the first participant in the second round
+        // חישוב המשתתפים הנותרים לאחר הסיבוב השני
+        // המשתתף האחרון שנותר בסיבוב הראשון הופך למשתתף הראשון בסיבוב השני
         int remainingAfterSecondRound = remainingAfterFirstRound - 1;
         return remainingAfterSecondRound;
     }
