@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class If_UpperHeight {
+public class If_else_UpperHeight {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
