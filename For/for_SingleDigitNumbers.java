@@ -1,3 +1,4 @@
+package For;
 //שמדפיסה את המספרים היחידים for לולאת 
 
 public class for_SingleDigitNumbers {

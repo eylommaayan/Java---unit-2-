@@ -1,3 +1,4 @@
+package While;
 //בשביל התלת כוביה עד המספר 6 רנדומלי while   תוכנית שמתשמת בולאות 
 
 public class While_Roll_dice_until_6 {

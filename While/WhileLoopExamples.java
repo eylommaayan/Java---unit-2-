@@ -1,3 +1,4 @@
+package While;
 public class WhileLoopExamples {
 
     public static void main(String[] args) {

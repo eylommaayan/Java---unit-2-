@@ -1,3 +1,4 @@
+package Varibels;
 import java.util.Scanner;
 
 public class DiscountCalculator {
